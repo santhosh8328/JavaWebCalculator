@@ -7,35 +7,25 @@
   <version>0.2</version>
   <name>WebAppCal Maven Webapp</name>
   <url>http://maven.apache.org</url>
-     <properties>
-      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-      <maven.compiler.source>1.8</maven.compiler.source>
-      <maven.compiler.target>1.8</maven.compiler.target>
-   </properties>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
   <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.8.2</version>
-      <scope>test</scope>
-    </dependency>
-    <!-- https://mvnrepository.com/artifact/javax.servlet/servlet-api -->
-<dependency>
-    <groupId>javax.servlet</groupId>
-    <artifactId>servlet-api</artifactId>
-    <version>2.5</version>
-</dependency>
-</dependencies>
-<plugin>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-war-plugin</artifactId>
-    <version>3.3.1</version> <!-- Use a newer version compatible with your Maven -->
-</plugin>
-<distributionManagement>
-  <repository>
-    <id>releases</id>
-    <!-- <url>http://52.204.135.48:8081/nexus/content/repositories/releases</url> -->    
-    <url>http://binary.ibm.com/nexus/content/repositories/releases</url>
-  </repository>
-</distributionManagement>
+    <!-- Your dependencies here -->
+  </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.3.1</version> <!-- Use a newer version compatible with your Maven -->
+      </plugin>
+      <!-- Other plugins here -->
+    </plugins>
+  </build>
+  <distributionManagement>
+    <!-- Your distribution management here -->
+  </distributionManagement>
 </project>
