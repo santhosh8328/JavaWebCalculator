@@ -26,6 +26,11 @@
     <version>2.5</version>
 </dependency>
 </dependencies>
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-war-plugin</artifactId>
+    <version>3.3.1</version> <!-- Use a newer version compatible with your Maven -->
+</plugin>
 <distributionManagement>
   <repository>
     <id>releases</id>
